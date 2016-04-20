@@ -4335,6 +4335,9 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
+.title-bar {
+  z-index: 9998; }
+
 .top-bar {
   background: #0a0a0a; }
   .top-bar ul {
@@ -4405,6 +4408,7 @@ video {
 .intro-box {
   position: absolute;
   bottom: 50px;
+  z-index: -10;
   background-color: #fff;
   text-align: center; }
   .intro-box h3 {
