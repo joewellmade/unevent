@@ -4433,11 +4433,11 @@ video {
 
 @media screen and (max-width: 39.9375em) {
   #bgvid {
-    visibility: hidden; } }
+    display: none; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #bgvid {
-    visibility: hidden; }
+    display: none; }
   .intro-box {
     position: relative;
     bottom: 0; } }
