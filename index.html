@@ -9,21 +9,31 @@
     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   </head>
   <body>
-    <nav role="custom-dropdown">
-    <input type="checkbox" id="button">
-    <label for="button" onclick></label>
-    
-    <ul>
-        <li><a href="#">UNEVENT</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">THE PROJECT</a></li>
-        <li><a href="#">BREAKING OUT</a></li>
-        <li><a href="#">SUPPORT US</a></li>
-        <li><a href="#">MOVE WITH US</a></li>
-    </ul>
-</nav>
 
-<div class="content-top">
+  <div data-sticky-container>
+    <div data-sticky data-margin-top='0'>
+
+      <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      
+      <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+          <ul class="menu vertical medium-horizontal expanded">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+            <li><a href="#">Six</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   
     <video autoplay muted poster="" id="bgvid" loop>
     <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
@@ -38,18 +48,15 @@
 
       </div>
 
+      <div class="make-donation">
+          <button>Make a Donation</button>
+      </div>
 
-</div>
-
-<div class="make-donation">
-    <button>Make a Donation</button>
-</div>
-
-<div class="row">
-  <div class="large-12 content-box">
-    <h1>Test</h1>
-  </div>
-</div>
+      <div class="row">
+        <div class="large-12 content-box">
+          <h1>Test</h1>
+        </div>
+      </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
