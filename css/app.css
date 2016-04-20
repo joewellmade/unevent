@@ -4433,7 +4433,16 @@ video {
 
 @media screen and (max-width: 39.9375em) {
   #bgvid {
-    display: none; } }
+    display: none; }
+  button {
+    height: 50px;
+    background-color: #fefefe;
+    padding: 10px 15px 5px 15px;
+    margin: 8px 8px;
+    font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #c79236; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #bgvid {
