@@ -829,7 +829,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
+  background: #0a0a0a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2171,7 +2171,7 @@ legend {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   .fieldset legend {
-    background: #fefefe;
+    background: #0a0a0a;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
@@ -2404,7 +2404,7 @@ select {
     width: 100%;
     border-right: 1px solid transparent; }
     .button-group.stacked .button:not(:last-child), .button-group.stacked-for-small .button:not(:last-child), .button-group.stacked-for-medium .button:not(:last-child) {
-      border-bottom: 1px solid #fefefe; }
+      border-bottom: 1px solid #0a0a0a; }
   @media screen and (min-width: 40em) {
     .button-group.stacked-for-small .button {
       width: auto; }
@@ -2650,7 +2650,7 @@ select {
   margin-right: 0.75rem; }
 
 .dropdown-pane {
-  background-color: #fefefe;
+  background-color: #0a0a0a;
   border: 1px solid #cacaca;
   border-radius: 0;
   display: block;
@@ -2997,7 +2997,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #fefefe;
+  background: #0a0a0a;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
   z-index: 1;
@@ -4342,7 +4342,8 @@ table.hover tr:nth-of-type(even):hover {
     .top-bar ul li {
       background: #0a0a0a; }
       .top-bar ul li a {
-        color: #fff; }
+        color: #fff;
+        text-align: center; }
 
 .sticky-container {
   background-color: #0a0a0a; }
@@ -4353,7 +4354,8 @@ table.hover tr:nth-of-type(even):hover {
   position: fixed;
   bottom: 0;
   height: 65px;
-  text-align: center; }
+  text-align: center;
+  z-index: 9999; }
 
 button {
   height: 50px;
@@ -4368,11 +4370,22 @@ button {
 h1, h2, h3 {
   font-family: 'BrandonTextWeb-Bold'; }
 
+h3 {
+  font-family: 'BrandonTextWeb-Medium';
+  font-size: 26px; }
+
 p {
-  font-family: 'BrandonTextWeb-Regular'; }
+  font-family: 'BrandonTextWeb-Regular';
+  font-size: 16px; }
+
+h1, h2, h3, h4, p {
+  color: #fefefe; }
 
 .content-top {
   padding-top: 100px;
+  position: relative; }
+
+.video-container {
   position: relative; }
 
 video {
@@ -4384,23 +4397,53 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(-10%);
+  transform: translateX(-50%) translateY(0%);
   background: url("") no-repeat;
   background-size: cover;
   transition: 1s opacity; }
 
 .intro-box {
   position: absolute;
-  bottom: 200px;
+  bottom: 50px;
   background-color: #fff;
   text-align: center; }
   .intro-box h3 {
-    padding-top: 10px; }
+    padding-top: 10px;
+    color: #0a0a0a; }
+  .intro-box p {
+    color: #0a0a0a; }
 
 .content-box {
-  height: 800px;
-  background-color: #ddd; }
+  background-color: #0a0a0a; }
+
+.about {
+  padding: 20px 20px 20px 20px; }
+
+.project {
+  padding: 20px 20px 20px 20px;
+  background-color: #1c65b0; }
+
+.project-columns {
+  margin-bottom: 60px; }
 
 @media screen and (max-width: 39.9375em) {
   .intro-box {
-    position: relative; } }
+    position: relative;
+    bottom: 0; } }
+
+@media screen and (max-width: 39.9375em) {
+  #bgvid {
+    visibility: hidden; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #bgvid {
+    visibility: hidden; }
+  .intro-box {
+    position: relative;
+    bottom: 0; } }
+
+@media screen and (min-width: 64em) {
+  .about {
+    padding: 20px 280px 20px 20px; }
+  .project {
+    padding: 20px 20px 20px 20px; } }
