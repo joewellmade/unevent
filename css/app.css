@@ -825,7 +825,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "BrandonTextWeb-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1658,7 +1658,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "BrandonTextWeb-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -4346,7 +4346,10 @@ table.hover tr:nth-of-type(even):hover {
       background: #0a0a0a; }
       .top-bar ul li a {
         color: #fff;
-        text-align: center; }
+        text-align: center;
+        font-family: "BrandonTextWeb-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px; }
 
 .sticky-container {
   background-color: #0a0a0a; }
@@ -4370,11 +4373,18 @@ button {
   font-size: 41px;
   color: #c79236; }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'BrandonTextWeb-Bold'; }
+
+h2 {
+  line-height: 1.2em; }
 
 h3 {
   font-family: 'BrandonTextWeb-Medium';
+  font-size: 26px; }
+
+h3 {
+  font-family: 'BrandonTextWeb-Regular';
   font-size: 26px; }
 
 p {
@@ -4413,7 +4423,8 @@ video {
   text-align: center; }
   .intro-box h3 {
     padding-top: 10px;
-    color: #0a0a0a; }
+    color: #0a0a0a;
+    font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif; }
   .intro-box p {
     color: #0a0a0a; }
 
@@ -4427,7 +4438,38 @@ video {
   padding: 20px 20px 20px 20px;
   background-color: #1c65b0; }
 
-.project-columns {
+.breaking-out {
+  background: url("../assets/breakout.jpg");
+  background-size: cover;
+  padding: 20px 20px 20px 20px; }
+  .breaking-out p {
+    font-size: 16px;
+    line-height: 1.2em; }
+
+.breakout {
+  display: inline;
+  background: black;
+  padding: 5px 0;
+  box-shadow: 10px 0 0 black, -10px 0 0 black;
+  -webkit-box-shadow: 10px 0 0 black, -10px 0 0 black; }
+
+.circles {
+  padding: 100px 0; }
+
+.help-us {
+  padding: 20px 20px 20px 20px;
+  background-color: #ce2f55;
+  position: relative; }
+  .help-us p {
+    font-size: 26px;
+    line-height: 1.2em; }
+
+.illustration {
+  position: absolute;
+  top: 0;
+  right: -140px; }
+
+.margin-bottom {
   margin-bottom: 60px; }
 
 @media screen and (max-width: 39.9375em) {
@@ -4446,14 +4488,21 @@ video {
     font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 28px;
-    color: #c79236; } }
+    color: #c79236; }
+  .illustration {
+    position: relative;
+    top: -40px;
+    right: -30px; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #bgvid {
     display: none; }
   .intro-box {
     position: relative;
-    bottom: 0; } }
+    bottom: 0; }
+  .illustration {
+    position: relative;
+    right: -40px; } }
 
 @media screen and (min-width: 64em) {
   .about {
