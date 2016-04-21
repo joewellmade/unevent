@@ -4467,8 +4467,10 @@ video {
   display: inline;
   background: black;
   padding: 5px 0;
-  box-shadow: 10px 0 0 black, -10px 0 0 black;
-  -webkit-box-shadow: 10px 0 0 black, -10px 0 0 black; }
+  background: black;
+  box-shadow: 12px 0 0 black,-12px 0 0 black;
+  box-decoration-break: clone;
+  padding: 14px 0 10px; }
 
 .circles {
   padding: 100px 0; }
