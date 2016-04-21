@@ -4441,23 +4441,23 @@ h1, h2, h3, h4, p {
 
 video {
   position: relative;
-  top: 100%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 50%;
-  width: auto;
+  top: 30%;
+  left: 32%;
+  width: 100%;
+  min-height: 100%;
+  width: 60%;
   height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(0.45%);
+  transform: translateX(-20%) translateY(-5%);
   background: url("") no-repeat;
-  background-size: cover;
+  background-size: 60% 60%;
   transition: 1s opacity; }
 
 .intro-box {
   position: absolute;
-  bottom: 50px;
+  top: 320px;
   z-index: -10;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center; }
   .intro-box h2 {
     padding-top: 10px;
