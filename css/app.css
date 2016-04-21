@@ -4470,7 +4470,7 @@ video {
   background: black;
   box-shadow: 12px 0 0 black,-12px 0 0 black;
   box-decoration-break: clone;
-  padding: 14px 0 10px; }
+  padding: 6px 0 6px; }
 
 .circles {
   padding: 100px 0; }
