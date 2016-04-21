@@ -4399,6 +4399,18 @@ p {
     p {
       font-size: 18px;
       line-height: 26px; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    p {
+      font-size: 18px;
+      line-height: 23.5px; } }
+  @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    p {
+      font-size: 18px;
+      line-height: 23.5px; } }
+  @media screen and (min-width: 75em) and (max-width: 89.9375em) {
+    p {
+      font-size: 22px;
+      line-height: 28.7px; } }
 
 p.small {
   font-size: 16px;
@@ -4448,12 +4460,33 @@ video {
 .content-box {
   background-color: #0a0a0a; }
 
-.about {
-  padding: 20px 20px 20px 20px; }
+.about-us {
+  padding: 0;
+  background-color: #0a0a0a;
+  position: relative; }
+
+.outside-img {
+  position: relative;
+  top: 0;
+  left: -20px; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .outside-img {
+      left: -40px; } }
 
 .project {
   padding: 20px 20px 20px 20px;
   background-color: #1c65b0; }
+
+.support {
+  padding: 20px 0;
+  background-color: #ce2f55; }
+
+.move {
+  padding: 20px 0;
+  background-color: #0a0a0a; }
+
+.video-stroke {
+  border: 6px solid #dab87b; }
 
 .breaking-out {
   background: url("../assets/breakout.jpg");
@@ -4473,17 +4506,16 @@ video {
   padding: 100px 0; }
 
 .help-us {
-  padding: 20px 20px 20px 20px;
+  padding: 0;
   background-color: #ce2f55;
   position: relative; }
-  .help-us p {
-    font-size: 26px;
-    line-height: 1.2em; }
 
 .illustration {
-  position: absolute;
-  top: 0;
+  position: relative;
   right: -140px; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .illustration {
+      right: -100px; } }
 
 .margin-bottom {
   margin-bottom: 60px; }
