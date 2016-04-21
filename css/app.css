@@ -829,7 +829,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #0a0a0a;
+  background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2171,7 +2171,7 @@ legend {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   .fieldset legend {
-    background: #0a0a0a;
+    background: #fefefe;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
@@ -2404,7 +2404,7 @@ select {
     width: 100%;
     border-right: 1px solid transparent; }
     .button-group.stacked .button:not(:last-child), .button-group.stacked-for-small .button:not(:last-child), .button-group.stacked-for-medium .button:not(:last-child) {
-      border-bottom: 1px solid #0a0a0a; }
+      border-bottom: 1px solid #fefefe; }
   @media screen and (min-width: 40em) {
     .button-group.stacked-for-small .button {
       width: auto; }
@@ -2650,7 +2650,7 @@ select {
   margin-right: 0.75rem; }
 
 .dropdown-pane {
-  background-color: #0a0a0a;
+  background-color: #fefefe;
   border: 1px solid #cacaca;
   border-radius: 0;
   display: block;
@@ -2997,7 +2997,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #0a0a0a;
+  background: #fefefe;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
   z-index: 1;
@@ -4362,6 +4362,11 @@ table.hover tr:nth-of-type(even):hover {
   height: 65px;
   text-align: center;
   z-index: 9999; }
+  .make-donation h2 {
+    text-align: right;
+    color: #fefefe;
+    display: inline;
+    padding: 20px 20px 0 0; }
 
 button {
   height: 50px;
@@ -4427,6 +4432,10 @@ h1, h2, h3, h4, p {
   padding-top: 100px;
   position: relative; }
 
+.header {
+  position: absolute;
+  top: 60px; }
+
 .video-container {
   position: relative; }
 
@@ -4439,7 +4448,7 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(0%);
+  transform: translateX(-50%) translateY(0.45%);
   background: url("") no-repeat;
   background-size: cover;
   transition: 1s opacity; }
@@ -4483,7 +4492,17 @@ video {
 
 .move {
   padding: 20px 0;
-  background-color: #0a0a0a; }
+  background-color: #0a0a0a;
+  background: url("../assets/stars.jpg");
+  background-size: cover; }
+
+.social {
+  margin-top: 60px; }
+
+.fa {
+  color: #dab87b;
+  font-size: 4em !important;
+  padding-right: 20px; }
 
 .video-stroke {
   border: 6px solid #dab87b; }
@@ -4528,14 +4547,18 @@ video {
 @media screen and (max-width: 39.9375em) {
   #bgvid {
     display: none; }
+  .make-donation {
+    text-align: left; }
+    .make-donation h2 {
+      padding: 25px 20px 0 0; }
   button {
     height: 50px;
     background-color: #fefefe;
-    padding: 10px 15px 5px 15px;
+    padding: 8px 8px 5px 8px;
     margin: 8px 8px;
     font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 18px;
     color: #c79236; }
   .illustration {
     position: relative;

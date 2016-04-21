@@ -7,6 +7,7 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   </head>
   <body>
 
@@ -21,38 +22,44 @@
       <div class="top-bar" id="main-menu">
         <div class="top-bar-left">
           <ul class="menu vertical medium-horizontal expanded">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-            <li><a href="#">Five</a></li>
-            <li><a href="#">Six</a></li>
+            <li><a href="#unevent">Unevent</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#the-project">The Project</a></li>
+            <li><a href="#breaking-out">Breaking Out</a></li>
+            <li><a href="#support-us">Support Us</a></li>
+            <li><a href="#move-with-us">Move With Us</a></li>
           </ul>
         </div>
       </div>
 
     </div>
   </div>
-
-    <div class="video-container">
+<div class="content-container">
+    <div class="video-container"  id="unevent">
       <video autoplay muted poster="" id="bgvid" loop>
       <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
       <source src="http://unevent.bushtheatre.co.uk/video/bush.webm" type="video/webm">
       <source src="http://unevent.bushtheatre.co.uk/video/bush.mp4" type="video/mp4">
       </video>
 
+      <div class="large-4 large-offset-4 columns header">
+        <img src="/assets/header.png" alt="Unevent Header" class="header-img" />
+      </div>
+
       <div class="large-4 large-offset-4 columns intro-box">
         <h2>Welcome to the uneventful un-event.</h2>
         <p class="small">In 2016 the Bush Theatre is undertaking a hugely ambitious £4M project to transform its home and deliver an unrivalled off site season of work within its local community. Over 90% of the funds have been raised but we need your help to reach our target and secure the Bush’s future. We’d love for you to consider supporting this incredible project with some feet up fundraising. Read on to find out more.</p>
+        <p>Thank you.</p>
       </div>
     </div>
   
     <div class="make-donation">
         <button>Make a Donation</button>
+        <h2 class="float-right">Request more info...</h2>
     </div>
 
     <!-- About Us Section -->
-    <div class="row expanded about-us">
+    <div class="row expanded about-us"  id="about">
       <div class="large-6 medium-12 columns outside-img">
         <img src="assets/outside01.png" alt="outside Bush image" />
       </div>
@@ -64,7 +71,7 @@
       </div>     
     </div>
     <!-- Project Section -->
-    <div class="row expanded project">  
+    <div class="row expanded project" id="the-project">  
       <div class="large-4 medium-12 columns project">
         <h1>The Project</h1>
         <p>In 2016 we will carry out a landmark redevelopment- unlocking the potential of this remarkable building and providing audiences, artists and our local community with a 21st Century theatre. During its transformation, the Bush will burst out of the Old Library and present a programme of work in iconic and rediscovered spaces in West London.</p>
@@ -100,7 +107,7 @@
       </div>
     </div>
     <!-- Breaking Out Section -->
-    <div class="row expanded breaking-out">
+    <div class="row expanded breaking-out" id="breaking-out">
       <div class="large-6 large-offset-6 columns margin-bottom"><br />
         <h1 class="breakout">Breaking out of the Bush… a year of extraordinary work</h1><br />
         <p class="breakout">While the builders are knocking through walls, the Bush will be breaking out from its building and exploring the communities that inspire it. We hope our 2016 season will be remembered as the start of something new. A year where the Bush met new audiences, discovered new voices and shaped the future of British Theatre.</p>
@@ -130,7 +137,7 @@
       </div>
     </div>
     <!-- Help Us Section -->
-    <div class="row expanded help-us">
+    <div class="row expanded help-us" id="support-us">
       <div class="large-6 columns"><br />
         <h1>Help us to write the next Act of the Bush’s history…</h1><br />
         <p>The project has attracted support from Arts Council England, the London Borough of Hammersmith & Fulham, Westfield London, a number of generous trusts and foundations as well as individual donors. Over 90% of the funds have been raised but we need your help to reach our goal and secure our future.</p>
@@ -167,18 +174,32 @@
       </div>
     </div>
     <!-- Move With Us -->
-    <div class="row expanded move margin-bottom">
+    <div class="row expanded move margin-bottom" id="move-with-us">
       <div class="large-3 columns">
         <h1>Move with us</h1>
         <p>We commissioned writer and poet Anthony Anaxagrorou to create a poem about the Bush Theatre – past, present and future.</p>
+        <h1 class="social">Follow our progress</h1>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
       </div>
       <div class="large-6 columns">
         <div class="flex-video video-stroke">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/M2cLA496lZE" frameborder="0" allowfullscreen></iframe>
       </div>
+      
+    </div>
+    <div class="row expanded margin-bottom">
+        <div class="large-6 columns">
+          <img src="assets/bush-logo.png" />
+        </div>
+        <div class="large-6 columns">
+          <img src="assets/b-logo.png" class="float-right" />
+        </div>
     </div>
       
-
+      
+</div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
