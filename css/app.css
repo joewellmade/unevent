@@ -4511,6 +4511,9 @@ video {
   padding-top: 20px;
   background-color: #1c65b0; }
 
+.project-top {
+  margin-bottom: 20px; }
+
 .breaking-out-background {
   background: url("../assets/breakout.jpg");
   background-size: cover; }
