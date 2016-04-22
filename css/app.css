@@ -4495,6 +4495,7 @@ video {
 .outside-img {
   background: url("../assets/outside02.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 800px; }
 
 .project-background {
@@ -4527,13 +4528,15 @@ video {
 .illustration {
   background: url("../assets/illustration.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 800px; }
 
 .move-with-us-background {
   padding-top: 20px;
   background-color: #0a0a0a;
   background: url("../assets/stars.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .social {
   margin-top: 60px; }
