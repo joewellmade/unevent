@@ -4348,8 +4348,7 @@ a#breaking-out {
 .top-bar {
   background: #0a0a0a; }
   .top-bar ul {
-    background: #0a0a0a;
-    z-index: 9998; }
+    background: #0a0a0a; }
     .top-bar ul li {
       background: #0a0a0a; }
       .top-bar ul li a {
@@ -4448,8 +4447,25 @@ h1, h2, h3, h4, p {
   padding-top: 100px;
   position: relative; }
 
-.video-container {
-  position: relative; }
+.header {
+  background: url("../assets/header-background.jpg");
+  display: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 900px;
+  padding-top: 100px; }
+
+.logo-box {
+  background-color: #fefefe;
+  padding: 20px 20px; }
+
+.intro-box {
+  background-color: #fefefe;
+  margin-top: 20px;
+  padding: 20px 20px;
+  text-align: left; }
+  .intro-box h2, .intro-box p {
+    color: #0a0a0a; }
 
 video {
   position: relative;
@@ -4465,31 +4481,16 @@ video {
   background-size: cover;
   transition: 1s opacity; }
 
-.header {
-  position: absolute;
-  top: 60px;
-  z-index: 20; }
-
-.intro-box {
-  position: absolute;
-  top: 320px;
-  z-index: -10;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center; }
-  .intro-box h2 {
-    padding-top: 10px;
-    color: #0a0a0a;
-    font-family: 'BrandonTextWeb-Bold', helvetica, sans-serif; }
-  .intro-box p {
-    color: #0a0a0a; }
-
 .content-box {
   background-color: #0a0a0a; }
 
-.about-us {
-  padding: 0;
+.about-background {
   background-color: #0a0a0a;
   position: relative; }
+
+.about-us {
+  padding: 0;
+  background-color: #0a0a0a; }
 
 .outside-img {
   position: relative;
@@ -4499,16 +4500,35 @@ video {
     .outside-img {
       left: -40px; } }
 
-.project {
-  padding: 20px 20px 20px 20px;
+.project-background {
+  padding-top: 20px;
   background-color: #1c65b0; }
+
+.breaking-out-background {
+  background: url("../assets/breakout.jpg");
+  background-size: cover; }
+
+.breakout {
+  display: inline;
+  background: black;
+  padding: 5px 0;
+  background: black;
+  box-shadow: 12px 0 0 black,-12px 0 0 black;
+  box-decoration-break: clone;
+  padding: 6px 0 6px; }
+
+.circles {
+  padding: 100px 0; }
+
+.help-us-background {
+  background-color: #ce2f55; }
 
 .support {
   padding: 20px 0;
   background-color: #ce2f55; }
 
-.move {
-  padding: 20px 0;
+.move-with-us-background {
+  padding-top: 20px;
   background-color: #0a0a0a;
   background: url("../assets/stars.jpg");
   background-size: cover; }
@@ -4524,42 +4544,13 @@ video {
 .video-stroke {
   border: 6px solid #dab87b; }
 
-.breaking-out {
-  background: url("../assets/breakout.jpg");
-  background-size: cover;
-  padding: 20px 20px 20px 20px; }
-
-.breakout {
-  display: inline;
-  background: black;
-  padding: 5px 0;
-  background: black;
-  box-shadow: 12px 0 0 black,-12px 0 0 black;
-  box-decoration-break: clone;
-  padding: 6px 0 6px; }
-
-.circles {
-  padding: 100px 0; }
-
 .help-us {
   padding: 0;
   background-color: #ce2f55;
   position: relative; }
 
-.illustration {
-  position: relative;
-  right: -140px; }
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .illustration {
-      right: -100px; } }
-
 .margin-bottom {
   margin-bottom: 60px; }
-
-@media screen and (max-width: 39.9375em) {
-  .intro-box {
-    position: relative;
-    bottom: 0; } }
 
 @media screen and (max-width: 39.9375em) {
   .make-donation {
@@ -4579,23 +4570,3 @@ video {
     position: relative;
     top: -40px;
     right: -30px; } }
-
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .intro-box {
-    position: relative;
-    bottom: 0; }
-  .illustration {
-    position: relative;
-    right: -40px; } }
-
-@media screen and (min-width: 64em) {
-  .about {
-    padding: 20px 20px 20px 20px; }
-  .project {
-    padding: 20px 20px 20px 20px; } }
-
-@media screen and (min-width: 75em) {
-  .about {
-    padding: 20px 160px 20px 20px; }
-  .project {
-    padding: 20px 20px 20px 20px; } }
