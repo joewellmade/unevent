@@ -4335,11 +4335,8 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
-a#breaking-out {
-  display: block;
-  position: relative;
-  top: 100px;
-  visibility: hidden; }
+body {
+  background: url("../assets/white_wall.png"); }
 
 .title-bar, #main-menu {
   position: relative;
@@ -4457,19 +4454,32 @@ a:hover, a:focus {
   position: relative; }
 
 .header {
-  background: url("../assets/header-background.jpg");
+  background: url("../assets/header06.gif");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1200px;
-  height: 900px;
-  padding-top: 100px; }
+  background-size: 65% auto;
+  height: 771px;
+  padding-top: 20px;
+  margin: 20px; }
+
+@media screen and (max-width: 39.9375em) {
+  .header {
+    background-size: 100% auto; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .header {
+    background-size: 100% auto; } }
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .header {
+    background-size: 80% auto; } }
 
 .logo-box {
-  background-color: #fefefe;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 20px; }
 
 .intro-box {
-  background-color: #fefefe;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
   padding: 20px 20px 10px 20px;
   text-align: left; }
@@ -4523,9 +4533,15 @@ video {
   background: black;
   padding: 5px 0;
   background: black;
-  box-shadow: 14px 0 0 black,-14px 0 0 black;
+  box-shadow: 12px 0 0 black,-12px 0 0 black;
   box-decoration-break: clone;
   padding: 7px 0 7px; }
+
+h1.breakout {
+  line-height: 40px; }
+
+h2.breakout {
+  line-height: 32px; }
 
 .circles {
   padding: 100px 0; }
@@ -4576,7 +4592,8 @@ video {
   .make-donation {
     text-align: left; }
     .make-donation h2 {
-      padding: 25px 20px 0 0; }
+      padding: 25px 20px 0 0;
+      font-size: 11px; }
   button {
     height: 50px;
     background-color: #fefefe;
@@ -4586,7 +4603,5 @@ video {
     text-transform: uppercase;
     font-size: 18px;
     color: #c79236; }
-  .illustration {
-    position: relative;
-    top: -40px;
-    right: -30px; } }
+  .illustration, .outside-img {
+    display: none; } }
