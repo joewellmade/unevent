@@ -4449,9 +4449,9 @@ h1, h2, h3, h4, p {
 
 .header {
   background: url("../assets/header-background.jpg");
-  display: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 1200px;
   height: 900px;
   padding-top: 100px; }
 
@@ -4493,12 +4493,9 @@ video {
   background-color: #0a0a0a; }
 
 .outside-img {
-  position: relative;
-  top: 0;
-  left: -20px; }
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .outside-img {
-      left: -40px; } }
+  background: url("../assets/outside01.png");
+  background-size: cover;
+  height: 800px; }
 
 .project-background {
   padding-top: 20px;
@@ -4526,6 +4523,11 @@ video {
 .support {
   padding: 20px 0;
   background-color: #ce2f55; }
+
+.illustration {
+  background: url("../assets/illustration.png");
+  background-size: cover;
+  height: 800px; }
 
 .move-with-us-background {
   padding-top: 20px;
