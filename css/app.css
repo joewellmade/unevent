@@ -4443,6 +4443,13 @@ p.small {
 h1, h2, h3, h4, p {
   color: #fefefe; }
 
+a {
+  color: #fefefe;
+  font-family: 'BrandonTextWeb-Bold', Helvetica, sans-serif; }
+
+a:hover, a:focus {
+  color: #e5e5e5; }
+
 .content-top {
   padding-top: 100px;
   position: relative; }
@@ -4511,9 +4518,9 @@ video {
   background: black;
   padding: 5px 0;
   background: black;
-  box-shadow: 12px 0 0 black,-12px 0 0 black;
+  box-shadow: 14px 0 0 black,-14px 0 0 black;
   box-decoration-break: clone;
-  padding: 6px 0 6px; }
+  padding: 7px 0 7px; }
 
 .circles {
   padding: 100px 0; }
@@ -4545,6 +4552,9 @@ video {
   color: #dab87b;
   font-size: 4em !important;
   padding-right: 20px; }
+
+.fa:hover, .fa:focus {
+  color: #cfa353; }
 
 .video-stroke {
   border: 6px solid #dab87b; }
