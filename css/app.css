@@ -4613,7 +4613,7 @@ h2.breakout {
     z-index: 9999;
     background-color: #0a0a0a;
     width: 100%;
-    padding: 20px 25px;
+    padding: 12px 10px;
     height: 45px; }
   .mobile-menu {
     display: block; }
