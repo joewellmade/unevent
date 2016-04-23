@@ -4372,12 +4372,14 @@ body {
   display: none; }
 
 .mobile-menu {
+  display: none;
   background-color: #0a0a0a;
   color: #fefefe;
-  height: 800px; }
-
-.mobile-menu {
-  display: none; }
+  height: 100vh; }
+  .mobile-menu li {
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e6e6e6; }
 
 .sticky-container {
   background-color: #0a0a0a; }
@@ -4491,8 +4493,11 @@ a:hover, a:focus {
   background: url("../assets/header06.gif");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% auto;
-  height: 771px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: 0 100%;
+  height: 800px;
   padding-top: 20px;
   margin: 0; }
 
@@ -4546,7 +4551,7 @@ a:hover, a:focus {
 .breakout {
   display: inline;
   background: black;
-  padding: 5px 0;
+  padding: 5px 5px;
   background: black;
   box-shadow: 12px 0 0 black,-12px 0 0 black;
   box-decoration-break: clone;
@@ -4580,6 +4585,13 @@ h2.breakout {
   background: url("../assets/stars.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.social-margin {
+  padding-bottom: 20px; }
+
+.logo-row {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .social {
   margin-top: 60px; }
