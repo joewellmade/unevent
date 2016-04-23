@@ -256,7 +256,7 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
-    $(window).load(function() { // better to use $(document).ready(function(){
+    $(document).ready(function() { // better to use $(document).ready(function(){
     $('li#unevent').on('touchstart', function() {
         window.location.reload();
       });
