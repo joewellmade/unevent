@@ -241,7 +241,7 @@
     <div class="row mobile-menu">
       <div class="large-12 columns">
         <ul class="menu vertical medium-horizontal expanded">
-            <li><a href="#unevent" onClick="window.location.reload()">Unevent</a></li>
+            <li><a href="#unevent">Unevent</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#the-project">The Project</a></li>
             <li><a href="#breaking-out">Breaking Out</a></li>
@@ -255,5 +255,12 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script>
+    $(window).load(function() { // better to use $(document).ready(function(){
+    $('li#unevent').on('touchstart', function() {
+        window.location.reload();
+      });
+    });
+    </script>
   </body>
 </html>
