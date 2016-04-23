@@ -4509,7 +4509,8 @@ a:hover, a:focus {
     background-size: 100% auto;
     height: 320px; }
   .logo-box {
-    position: relative; }
+    position: relative;
+    background-color: rgba(255, 255, 255, 0); }
   .intro-box {
     position: relative; } }
 
