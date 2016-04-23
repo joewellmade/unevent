@@ -4357,6 +4357,9 @@ body {
       .top-bar ul li a:hover, .top-bar ul li a:focus {
         color: #cbcbcb; }
 
+.top-bar-left {
+  z-index: 9999; }
+
 .anchor {
   display: block;
   height: 50px;
@@ -4364,6 +4367,17 @@ body {
   margin-top: -50px;
   /*same height as header*/
   visibility: hidden; }
+
+.mobile-menu-bar {
+  display: none; }
+
+.mobile-menu {
+  background-color: #0a0a0a;
+  color: #fefefe;
+  height: 800px; }
+
+.mobile-menu {
+  display: none; }
 
 .sticky-container {
   background-color: #0a0a0a; }
@@ -4453,18 +4467,46 @@ a:hover, a:focus {
   padding-top: 100px;
   position: relative; }
 
+.header-area {
+  position: relative; }
+
+.header-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.logo-box {
+  padding: 20px 20px; }
+
+.intro-box {
+  margin-top: 0;
+  padding: 20px 20px 10px 20px;
+  text-align: left; }
+  .intro-box h2, .intro-box p {
+    color: #0a0a0a; }
+
 .header {
+  position: relative;
   background: url("../assets/header06.gif");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 65% auto;
+  background-size: 100% auto;
   height: 771px;
   padding-top: 20px;
-  margin: 20px; }
+  margin: 0 0 20px 0; }
 
 @media screen and (max-width: 39.9375em) {
+  .header-box {
+    height: 200px; }
   .header {
-    background-size: 100% auto; } }
+    padding-top: 0;
+    background-size: 100% auto;
+    height: 320px; }
+  .logo-box {
+    position: relative; }
+  .intro-box {
+    position: relative; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .header {
@@ -4474,38 +4516,11 @@ a:hover, a:focus {
   .header {
     background-size: 80% auto; } }
 
-.logo-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 20px; }
-
-.intro-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 20px;
-  padding: 20px 20px 10px 20px;
-  text-align: left; }
-  .intro-box h2, .intro-box p {
-    color: #0a0a0a; }
-
-video {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  min-height: 100%;
-  width: 62%;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-15%);
-  background: url("") no-repeat;
-  background-size: cover;
-  transition: 1s opacity; }
-
 .content-box {
   background-color: #0a0a0a; }
 
 .about-background {
-  background-color: #0a0a0a;
-  position: relative; }
+  background-color: #0a0a0a; }
 
 .about-us {
   padding: 0;
@@ -4589,6 +4604,21 @@ h2.breakout {
   margin-bottom: 60px; }
 
 @media screen and (max-width: 39.9375em) {
+  .sticky-container {
+    display: none; }
+  .mobile-menu-bar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #0a0a0a;
+    width: 100%;
+    padding: 20px 25px;
+    height: 45px; }
+  .mobile-menu {
+    display: block; }
+  .header-box {
+    position: relative; }
   .make-donation {
     text-align: left; }
     .make-donation h2 {
@@ -4604,4 +4634,15 @@ h2.breakout {
     font-size: 18px;
     color: #c79236; }
   .illustration, .outside-img {
-    display: none; } }
+    display: none; }
+  .move-with-us-background {
+    margin-top: 0; }
+  .move-with-us-background div {
+    margin-bottom: 0; }
+  .anchor {
+    display: block;
+    height: 45px;
+    /*same height as header*/
+    margin-top: -45px;
+    /*same height as header*/
+    visibility: hidden; } }
