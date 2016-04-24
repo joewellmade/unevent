@@ -4375,7 +4375,8 @@ body {
   display: none;
   background-color: #0a0a0a;
   color: #fefefe;
-  height: 100vh; }
+  height: 95vh;
+  margin-bottom: 40px; }
   .mobile-menu li {
     height: 50px;
     padding: 5px 10px;
