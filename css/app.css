@@ -4337,13 +4337,13 @@ table.hover tr:nth-of-type(even):hover {
 
 body {
   background: url("../assets/white_wall.png");
-  padding-top: 50px; }
+  padding-top: 60px; }
 
 #main-menu {
   position: fixed;
   top: 0;
   z-index: 9998;
-  height: 60px; }
+  height: 65px; }
 
 .top-bar {
   background: #0a0a0a; }
@@ -4474,7 +4474,8 @@ a:hover, a:focus {
   position: relative; }
 
 .header-area {
-  position: relative; }
+  position: relative;
+  margin-bottom: -17%; }
 
 .header-box {
   background-color: rgba(255, 255, 255, 0.9);
@@ -4492,18 +4493,11 @@ a:hover, a:focus {
   .intro-box h2, .intro-box p {
     color: #0a0a0a; }
 
-.header {
+#swiffycontainer {
   position: relative;
-  background: url("../assets/header06.gif");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-position: 0 110%;
-  height: 820px;
-  padding-top: 20px;
-  margin: 0; }
+  top: -300px;
+  max-width: 1625px;
+  height: 1200px; }
 
 @media screen and (max-width: 39.9375em) {
   .header-box {
@@ -4512,6 +4506,13 @@ a:hover, a:focus {
     padding-top: 0;
     background-size: 100% auto;
     height: 320px; }
+  .swiffy-area {
+    margin-bottom: -25%; }
+  #swiffycontainer {
+    position: relative;
+    top: -100px;
+    max-width: 800px;
+    height: 310px; }
   .logo-box {
     position: relative;
     background-color: rgba(255, 255, 255, 0); }
@@ -4519,8 +4520,21 @@ a:hover, a:focus {
     position: relative; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  body {
+    padding-top: 60px; }
   .header {
-    background-size: 100% auto; } }
+    background-size: 100% auto; }
+  .header {
+    padding-top: 0;
+    background-size: 100% auto;
+    height: 320px; }
+  .swiffy-area {
+    margin-bottom: 2%; }
+  #swiffycontainer {
+    position: relative;
+    top: -60px;
+    max-width: 1625px;
+    height: 800px; } }
 
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   .header {

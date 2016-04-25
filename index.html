@@ -21,7 +21,7 @@
       
       <div class="top-bar" id="main-menu">
         <div class="top-bar-left">
-          <ul class="menu vertical medium-horizontal expanded">
+          <ul class="menu medium-horizontal expanded">
             <li><a href="#unevent" onClick="window.location.reload()">Unevent</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#the-project">The Project</a></li>
@@ -42,10 +42,17 @@
       <span class="anchor" id="unevent"></span>
       <div class="row header-area">
         <!--Animated Gif-->
-        <div class="row">
-          <div class="large-12 columns header">
+        <div class="row swiffy-area">
+          <!--<div class="large-12 columns header">
+          </div>-->
+
+          <!-- SWIFFY -->
+          <div id="swiffycontainer">
           </div>
+          <!-- SWIFFY END -->
+
         </div>
+        
         <div class="row header-box">
           <div class="large-6 columns logo-box">
             <img src="assets/header.png" alt="Unevent Header" class="header-img" />
@@ -245,6 +252,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/swiffy/v7.4/runtime.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
     $(document).ready(function() {
@@ -252,6 +260,13 @@
         window.location.reload();
       });
     });
+    </script>
+    <script>
+      
+      var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
+          swiffyobject, {});
+      
+      stage.start();
     </script>
   </body>
 </html>
