@@ -3740,7 +3740,7 @@ table.hover tr:nth-of-type(even):hover {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.6rem; }
+  padding: 0.8rem; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
