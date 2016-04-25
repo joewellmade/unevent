@@ -4343,7 +4343,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 9998;
-  height: 50px; }
+  height: 60px; }
 
 .top-bar {
   background: #0a0a0a; }
@@ -4628,6 +4628,8 @@ h2.breakout {
 
 @media screen and (max-width: 39.9375em) {
   .sticky-container {
+    display: none; }
+  #main-menu, .top-bar-left {
     display: none; }
   .mobile-menu-bar {
     display: inline-block;
