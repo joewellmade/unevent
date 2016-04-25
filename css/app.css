@@ -3740,7 +3740,7 @@ table.hover tr:nth-of-type(even):hover {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0.6rem; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
@@ -4336,11 +4336,14 @@ table.hover tr:nth-of-type(even):hover {
   animation-delay: 700ms !important; }
 
 body {
-  background: url("../assets/white_wall.png"); }
+  background: url("../assets/white_wall.png");
+  padding-top: 50px; }
 
-.title-bar, #main-menu {
-  position: relative;
-  z-index: 9998; }
+#main-menu {
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  height: 50px; }
 
 .top-bar {
   background: #0a0a0a; }
@@ -4497,8 +4500,8 @@ a:hover, a:focus {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-position: 0 100%;
-  height: 800px;
+  background-position: 0 110%;
+  height: 820px;
   padding-top: 20px;
   margin: 0; }
 
@@ -4521,7 +4524,10 @@ a:hover, a:focus {
 
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   .header {
-    background-size: 80% auto; } }
+    background-size: 80% auto;
+    background-position: 0 240%;
+    height: 650px;
+    background-position: center center; } }
 
 .content-box {
   background-color: #0a0a0a; }
@@ -4566,7 +4572,10 @@ h2.breakout {
   line-height: 32px; }
 
 .circles {
-  padding: 100px 0; }
+  padding: 100px 10px; }
+
+.circles img {
+  margin: 10px auto; }
 
 .help-us-background {
   background-color: #ce2f55; }
@@ -4628,11 +4637,12 @@ h2.breakout {
     background-color: #0a0a0a;
     width: 100%;
     padding: 12px 10px;
-    height: 45px; }
+    height: 46px; }
   .mobile-menu {
     display: block; }
   .header-box {
-    position: relative; }
+    position: relative;
+    background-color: rgba(255, 255, 255, 0); }
   .make-donation {
     text-align: left; }
     .make-donation h2 {
@@ -4660,3 +4670,7 @@ h2.breakout {
     margin-top: -45px;
     /*same height as header*/
     visibility: hidden; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .illustration, .outside-img {
+    display: none; } }
