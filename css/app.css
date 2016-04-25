@@ -4365,9 +4365,9 @@ body {
 
 .anchor {
   display: block;
-  height: 50px;
+  height: 60px;
   /*same height as header*/
-  margin-top: -50px;
+  margin-top: -60px;
   /*same height as header*/
   visibility: hidden; }
 
@@ -4432,8 +4432,8 @@ h2 {
 
 p {
   font-family: 'BrandonTextWeb-Regular', helvetica, sans-serif;
-  font-size: 26px;
-  line-height: 34px; }
+  font-size: 16px;
+  line-height: 23px; }
   @media screen and (max-width: 39.9375em) {
     p {
       font-size: 18px;
@@ -4557,7 +4557,7 @@ a:hover, a:focus {
   background: url("../assets/outside02.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px; }
+  height: 500px; }
 
 .project-background {
   padding-top: 20px;
@@ -4602,7 +4602,7 @@ h2.breakout {
   background: url("../assets/illustration.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px; }
+  height: 500px; }
 
 .move-with-us-background {
   padding-top: 20px;
