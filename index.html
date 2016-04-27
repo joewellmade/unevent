@@ -53,7 +53,7 @@
 
         </div>
         
-        <div class="row header-box">
+        <div class="row header-box" id="div1">
           <div class="large-6 columns logo-box">
             <img src="assets/header.png" alt="Unevent Header" class="header-img" />
           </div>
@@ -267,6 +267,12 @@
           swiffyobject, {});
       
       stage.start();
+    </script>
+    <script type="text/javascript">
+      function showIt() {
+        document.getElementById("div1").style.visibility = "visible";
+      }
+      setTimeout("showIt()", 6000); // after 1 sec
     </script>
   </body>
 </html>

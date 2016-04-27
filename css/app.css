@@ -4339,6 +4339,9 @@ body {
   background: url("../assets/white_wall.png");
   padding-top: 60px; }
 
+#div1 {
+  visibility: hidden; }
+
 #main-menu {
   position: fixed;
   top: 0;
@@ -4641,6 +4644,8 @@ h2.breakout {
   margin-bottom: 60px; }
 
 @media screen and (max-width: 39.9375em) {
+  #div1 {
+    visibility: visible; }
   .sticky-container {
     display: none; }
   #main-menu, .top-bar-left {
