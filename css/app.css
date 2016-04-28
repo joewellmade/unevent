@@ -4523,8 +4523,8 @@ a:hover, a:focus {
     padding-bottom: 100%; }
   #swiffycontainer {
     position: absolute;
-    top: 0;
-    left: 12px;
+    top: -20px;
+    left: 10px;
     width: 100%;
     height: 100%; }
   .logo-box {
@@ -4666,7 +4666,7 @@ h2.breakout {
 
 .fa {
   color: #dab87b;
-  font-size: 4em !important;
+  font-size: 2.8em !important;
   padding-right: 20px; }
 
 .fa:hover, .fa:focus {
@@ -4681,7 +4681,7 @@ h2.breakout {
   position: relative; }
 
 .margin-bottom {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 @media screen and (max-width: 39.9375em) {
   #div1 {
