@@ -4349,11 +4349,11 @@ body {
   height: 50px; }
 
 .top-bar {
-  background: #0a0a0a; }
+  background: rgba(0, 0, 0, 0.7); }
   .top-bar ul {
-    background: #0a0a0a; }
+    background: transparent; }
     .top-bar ul li {
-      background: #0a0a0a; }
+      background: transparent; }
       .top-bar ul li a {
         color: #fefefe;
         text-align: center;
