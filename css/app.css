@@ -4439,20 +4439,20 @@ p {
   line-height: 23px; }
   @media screen and (max-width: 39.9375em) {
     p {
-      font-size: 18px;
-      line-height: 26px; } }
+      font-size: 16px;
+      line-height: 23px; } }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     p {
-      font-size: 18px;
-      line-height: 23.5px; } }
+      font-size: 16px;
+      line-height: 23px; } }
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
     p {
-      font-size: 18px;
-      line-height: 23.5px; } }
+      font-size: 16px;
+      line-height: 23px; } }
   @media screen and (min-width: 75em) and (max-width: 89.9375em) {
     p {
-      font-size: 22px;
-      line-height: 28.7px; } }
+      font-size: 16px;
+      line-height: 23px; } }
 
 p.small {
   font-size: 16px;
