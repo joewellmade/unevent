@@ -4336,7 +4336,6 @@ table.hover tr:nth-of-type(even):hover {
   animation-delay: 700ms !important; }
 
 body {
-  background: url("../assets/white_wall.png");
   padding-top: 60px; }
 
 #div1 {
@@ -4498,11 +4497,17 @@ a:hover, a:focus {
   .intro-box h2, .intro-box p {
     color: #0a0a0a; }
 
-#swiffycontainer {
+.swiffy-area {
   position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 115%; }
+
+#swiffycontainer {
+  position: absolute;
   top: -300px;
   width: 100%;
-  height: 1190px; }
+  height: 100%; }
 
 @media screen and (max-width: 39.9375em) {
   .header-box {
@@ -4512,11 +4517,16 @@ a:hover, a:focus {
     background-size: 100% auto;
     height: 320px; }
   .swiffy-area {
-    margin-bottom: -18%; }
-  #swiffycontainer {
     position: relative;
-    top: -80px;
-    height: 320px; }
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%; }
+  #swiffycontainer {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 100%;
+    height: 100%; }
   .logo-box {
     position: relative;
     background-color: rgba(255, 255, 255, 0); }
@@ -4526,18 +4536,25 @@ a:hover, a:focus {
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   body {
     padding-top: 60px; }
-  .header {
-    background-size: 100% auto; }
-  .header {
-    padding-top: 0;
-    background-size: 100% auto;
-    height: 320px; }
   .swiffy-area {
-    margin-bottom: 2%; }
-  #swiffycontainer {
     position: relative;
-    top: -60px;
-    height: 800px; } }
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%; }
+  #swiffycontainer {
+    position: absolute;
+    top: -90px;
+    left: 17px;
+    width: 100%;
+    height: 100%; }
+  .logo-box {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0); }
+  .intro-box {
+    position: relative; }
+    .intro-box p.small {
+      font-size: 10px;
+      line-height: 1.2em; } }
 
 @media screen and (min-width: 75em) and (max-width: 89.9375em) {
   .swiffy-area {
