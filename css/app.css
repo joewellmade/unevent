@@ -4497,20 +4497,13 @@ a:hover, a:focus {
   .intro-box h2, .intro-box p {
     color: #0a0a0a; }
 
-.intro-box2 {
-  margin-top: 0;
-  padding: 20px 20px 10px 20px;
-  text-align: left; }
-  .intro-box2 h2, .intro-box2 p {
-    color: #0a0a0a; }
-
 .swiffy-area {
   position: relative;
   width: 100%;
   height: 100%;
   padding-bottom: 115%; }
 
-#swiffycontainer img {
+#swiffycontainer {
   position: absolute;
   top: -300px;
   width: 100%;
@@ -4537,10 +4530,8 @@ a:hover, a:focus {
   .logo-box {
     position: relative;
     background-color: rgba(255, 255, 255, 0); }
-  .intro-box, .intro-box2 {
+  .intro-box {
     position: relative; }
-  .intro-box2 {
-    padding: 0 20px 10px 20px; }
   .make-donation {
     height: 108px; }
     .make-donation h3 {
@@ -4578,9 +4569,9 @@ a:hover, a:focus {
   .logo-box {
     position: relative;
     background-color: rgba(255, 255, 255, 0); }
-  .intro-box, .intro-box2 {
+  .intro-box {
     position: relative; }
-    .intro-box p.small, .intro-box2 p.small {
+    .intro-box p.small {
       font-size: 10px;
       line-height: 1.2em; } }
 
