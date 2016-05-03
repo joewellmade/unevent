@@ -38,22 +38,26 @@
   <div class="mobile-menu-bar">
     <div class="title-bar-title"><a href="#mobile-menu">Menu</a></div>
   </div>
-
+      
+      <!-- UnEvent Section -->
       <span class="anchor" id="unevent"></span>
+      
       <div class="row header-area">
-        <!--Animated Gif-->
-        <div class="row swiffy-area">
-          <!--<div class="large-12 columns header">
-          </div>-->
-
-          <!-- SWIFFY -->
-          <div id="swiffycontainer">
-          </div>
-          <!-- SWIFFY END -->
-
-        </div>
         
-        <div class="row header-box" id="div1">
+        <!-- Animated Gif -->
+        <div class="large-12 columns animatedGif">
+          <img src="assets/anim.gif" alt="UnEvent animated gif" />
+        </div>
+
+        <!-- HTML 5 Video -->
+        <video width="320" height="240" autoplay>
+          <source src="http://unevent.bushtheatre.co.uk/video/bush.mp4" type="video/mp4">
+          <source src="http://unevent.bushtheatre.co.uk/video/bush.webm" type="video/webm">
+          <p>Your browser does not support the video tag.</p>
+        </video>
+        
+        <!-- Logo and Intro Paragraph Content -->
+        <div class="row header-box" id="div1">         
           <div class="medium-4 columns logo-box">
             <img src="assets/header.png" alt="Unevent Header" class="header-img" />
           </div>
@@ -64,6 +68,8 @@
               <p class="small">Scroll down to find out more, or just click ‘Make a donation to the UnEvent’ below. We’d love you to consider supporting this incredible project with some feet up fundraising and be celebrated as one of our ‘Breakthrough Supporters’.</p><p class="small">With thanks and best wishes, Gianni and Michael</p>
           </div>
         </div>
+        <!-- Logo and Paragrpah content END -->
+
       </div>
 
     <div class="make-donation">
@@ -208,6 +214,7 @@
         </div>
       </div>
     </div>
+
     <!-- Move With Us -->
     <span class="anchor" id="move-with-us"></span>
     <div class="move-with-us-background margin-bottom">
@@ -262,11 +269,7 @@
       });
     });
     </script>
-    <script>      
-      var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
-          swiffyobject, {});      
-      stage.start();
-    </script>
+    
     <script type="text/javascript">
       function showIt() {
         document.getElementById("div1").style.visibility = "visible";
