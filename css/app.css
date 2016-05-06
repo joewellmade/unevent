@@ -3015,22 +3015,18 @@ a:hover, a:focus {
 .header-box {
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  top: 0;
+  padding: 15px 10px 5px 10px;
+  top: -10px;
   left: 0; }
-
-.logo-box {
-  padding: 20px 20px; }
 
 .intro-box {
   margin-top: 0;
-  padding: 20px 20px 10px 20px;
   text-align: left; }
   .intro-box h2, .intro-box p {
     color: #0a0a0a; }
 
 .intro-box2 {
   margin-top: 0;
-  padding: 20px 20px 10px 20px;
   text-align: left; }
   .intro-box2 h2, .intro-box2 p {
     color: #0a0a0a; }
