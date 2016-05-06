@@ -3160,6 +3160,8 @@ h2.breakout {
     height: 46px; }
   .mobile-menu {
     display: block; }
+  .logo-box {
+    margin-top: 20px; }
   .header-box {
     position: relative;
     background-color: rgba(255, 255, 255, 0); }
