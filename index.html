@@ -35,7 +35,7 @@
         
         <!-- Animated Gif -->
         <div class="large-12 columns animatedGif">
-          <img src="assets/anim.gif" alt="UnEvent animated gif" />
+          
         </div>
 
         <!-- HTML 5 Video -->
@@ -249,14 +249,28 @@
     </div>
            
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/swiffy/v7.4/runtime.js"></script>
-    <script src="js/min/app-min.js"></script>
+
+    
+    <script>
+    $(document).foundation();
+
+    $(function () {
+    var wWidth = $(window).width();
+      if (wWidth > 768) {
+          $('.animatedGif').hide();
+
+      } else {
+          $('<img alt="smaller image" src="assets/anim.gif" />').appendTo('.animatedGif');
+      }
+    });
+    
+    </script>
+
     <script>
     $(document).ready(function() {
-    $('li#unevent').on('touchstart', function() {
-        window.location.reload();
+      $('li#unevent').on('touchstart', function() {
+      window.location.reload();
       });
     });
     </script>
@@ -267,5 +281,6 @@
       }
       setTimeout("showIt()", 6000); // after 1 sec
     </script>
+
   </body>
 </html>
